@@ -1,4 +1,10 @@
-import { Platform, SafeAreaView, StyleSheet, View } from "react-native";
+import {
+  Platform,
+  SafeAreaView,
+  ScrollView,
+  StyleSheet,
+  View,
+} from "react-native";
 import PokemonCard from "./Components/PokemonCard";
 
 export default function App() {
@@ -40,7 +46,12 @@ export default function App() {
 
   return (
     <SafeAreaView style={styles.container}>
-      <PokemonCard {...charmanderData} />
+      <ScrollView>
+        <PokemonCard {...charmanderData} />
+        <PokemonCard {...bulbasaurData} />
+        <PokemonCard {...pikachuData} />
+        <PokemonCard {...squirtleData} />
+      </ScrollView>
     </SafeAreaView>
   );
 }

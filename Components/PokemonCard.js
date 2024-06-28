@@ -114,4 +114,18 @@ const styles = StyleSheet.create({
     fontSize: 22,
     fontWeight: "bold",
   },
+  movesContainer: {
+    marginBottom: 12,
+  },
+  movesText: {
+    fontSize: 22,
+    fontWeight: "bold",
+  },
+  weaknessContainer: {
+    marginBottom: 8,
+  },
+  weaknessText: {
+    fontSize: 22,
+    fontWeight: "bold",
+  },
 });
